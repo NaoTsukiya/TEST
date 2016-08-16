@@ -31,7 +31,8 @@ $app->post('/callback', function (Request $request) use ($app, $bot) {
         $content = $obj['content'];
 
         if ($content['text']) {
-            $bot->sendText($from, sprintf('%sれなか？', $content['text'])); 
+//            $bot->sendText($from, sprintf('%sれなか？', $content['text'])); 
+            $bot->sendText($from, sprintf('れいなー', $content['text'])); 
         }
     }
 
